@@ -22,7 +22,15 @@ public class InjectedCalculator
 	public static void main(String[] args)
 	{
 		InjectedCalculator calculator = new InjectedCalculator(new CalculatorInjector().inject());
-		System.out.println(calculator.evaluator.evaluateExpression(String.join(" ", args)));
+		try
+		{
+			System.out.println(calculator.evaluator.evaluateExpression(String.join(" ", args)));
+		}
+		catch (java.util.EmptyStackException e)
+		{
+			System.out.println("Could not evaluate expression.");
+			System.exit(1);
+		}
 	}
 	
 	public long evaluateExpression(String expression)
