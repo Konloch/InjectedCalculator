@@ -2,12 +2,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.konloch</groupId>
-	<artifactId>UnderEngineeredCalculator</artifactId>
+	<artifactId>InjectedCalculator</artifactId>
 	<version>0.0.1</version>
 
-	<name>UnderEngineeredCalculator</name>
+	<name>InjectedCalculator</name>
 	<description>The last calculator you'll be able to use.</description>
-	<url>https://konloch.com/UnderEngineeredCalculator/</url>
+	<url>https://konloch.com/InjectedCalculator/</url>
 	<inceptionYear>2024</inceptionYear>
 
 	<licenses>
@@ -33,9 +33,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/Konloch/UnderEngineeredCalculator.git</connection>
-		<developerConnection>scm:git:ssh://github.com:Konloch/UnderEngineeredCalculator.git</developerConnection>
-		<url>http://github.com/Konloch/UnderEngineeredCalculator/tree/master</url>
+		<connection>scm:git:git://github.com/Konloch/InjectedCalculator.git</connection>
+		<developerConnection>scm:git:ssh://github.com:Konloch/InjectedCalculator.git</developerConnection>
+		<url>http://github.com/Konloch/InjectedCalculator/tree/master</url>
 	</scm>
 
 	<properties>
@@ -112,7 +112,7 @@
 				<configuration>
 					<transformers>
 						<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-							<mainClass>com.konloch.uec.UnderEngineeredCalculator</mainClass>
+							<mainClass>com.konloch.ic.InjectedCalculator</mainClass>
 							<manifestEntries>
 								<Implementation-Version>${project.version}</Implementation-Version>
 								<X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>

@@ -1,8 +1,8 @@
-package com.konloch.uec;
+package com.konloch.ic;
 
-import com.konloch.uec.calculator.Calculator;
-import com.konloch.uec.calculator.builder.CalculatorBuilder;
-import com.konloch.uec.calculator.expression.ExpressionEvaluator;
+import com.konloch.ic.calculator.Calculator;
+import com.konloch.ic.calculator.injector.CalculatorInjector;
+import com.konloch.ic.calculator.expression.ExpressionEvaluator;
 
 /**
  * "But its also missing code, so it injects what its missing"
@@ -10,18 +10,18 @@ import com.konloch.uec.calculator.expression.ExpressionEvaluator;
  * @author Konloch
  * @since 10/15/2023
  */
-public class UnderEngineeredCalculator
+public class InjectedCalculator
 {
 	private final ExpressionEvaluator evaluator;
 	
-	public UnderEngineeredCalculator(Calculator calculator)
+	public InjectedCalculator(Calculator calculator)
 	{
 		this.evaluator = new ExpressionEvaluator(calculator);
 	}
 	
 	public static void main(String[] args)
 	{
-		UnderEngineeredCalculator calculator = new UnderEngineeredCalculator(new CalculatorBuilder().build());
+		InjectedCalculator calculator = new InjectedCalculator(new CalculatorInjector().inject());
 		System.out.println(calculator.evaluator.evaluateExpression(String.join(" ", args)));
 	}
 	

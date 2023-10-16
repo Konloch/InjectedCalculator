@@ -1,7 +1,7 @@
-package com.konloch.uec.test;
+package com.konloch.ic.test;
 
-import com.konloch.uec.UnderEngineeredCalculator;
-import com.konloch.uec.calculator.builder.CalculatorBuilder;
+import com.konloch.ic.InjectedCalculator;
+import com.konloch.ic.calculator.injector.CalculatorInjector;
 
 /**
  * @author Konloch
@@ -11,7 +11,7 @@ public class TestCalculator
 {
 	public static void main(String[] args)
 	{
-		UnderEngineeredCalculator calculator = new UnderEngineeredCalculator(new CalculatorBuilder().build());
+		InjectedCalculator calculator = new InjectedCalculator(new CalculatorInjector().inject());
 		
 		//expressions without parentheses
 		assertEquals(7, calculator.evaluateExpression("3 + 2 * 2"));

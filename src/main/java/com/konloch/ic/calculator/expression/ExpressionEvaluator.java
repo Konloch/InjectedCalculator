@@ -1,6 +1,6 @@
-package com.konloch.uec.calculator.expression;
+package com.konloch.ic.calculator.expression;
 
-import com.konloch.uec.calculator.Calculator;
+import com.konloch.ic.calculator.Calculator;
 
 import java.util.Stack;
 

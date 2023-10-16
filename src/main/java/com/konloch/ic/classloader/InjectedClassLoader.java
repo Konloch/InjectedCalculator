@@ -1,10 +1,10 @@
-package com.konloch.uec.classloader;
+package com.konloch.ic.classloader;
 
 /**
  * @author Konloch
  * @since 10/15/2023
  */
-public class EUCCL extends ClassLoader
+public class InjectedClassLoader extends ClassLoader
 {
 	public Class<?> defineClass(String name, byte[] bytecode)
 	{

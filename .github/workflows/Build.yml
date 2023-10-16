@@ -33,6 +33,6 @@ jobs:
       uses: actions/upload-artifact@v3
       if: ${{ matrix.java == '8' }}
       with:
-        name: UnderEngineeredCalculator-${{ env.lib_version }}-SNAPSHOT
-        path: target/UnderEngineeredCalculator-${{ env.lib_version }}.jar
+        name: ic
+        path: target/InjectedCalculator-${{ env.lib_version }}.jar
         retention-days: 7

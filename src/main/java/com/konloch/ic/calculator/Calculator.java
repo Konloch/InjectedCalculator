@@ -1,4 +1,4 @@
-package com.konloch.uec.calculator;
+package com.konloch.ic.calculator;
 
 /**
  * @author Konloch
