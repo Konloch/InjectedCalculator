@@ -27,4 +27,4 @@ java -jar UEC.jar 1+1*5/9
 ## 👨‍💻 Disclaimer
 + This is more of a fun experiment, don't take it too seriously.
 + Only 4 operations supported. (`Add`, `Subtract`, `Multiply`, `Divide`)
-+ No decimal / floating point / parentheses support. (Integers only / limited scope support)
++ No decimal / floating point / parentheses support. (Integers only / limited order of operations support)
