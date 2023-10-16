@@ -22,6 +22,7 @@ public class InjectedCalculator
 	public static void main(String[] args)
 	{
 		InjectedCalculator calculator = new InjectedCalculator(new CalculatorInjector().inject());
+		
 		try
 		{
 			System.out.println(calculator.evaluator.evaluateExpression(String.join(" ", args)));
