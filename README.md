@@ -22,7 +22,7 @@ java -jar UEC.jar 1+1*5/9
 
 ## 👨‍ What Is This
 + A blank calculator base with the `Add`, `Sub`, `Mul` & `Div` operators.
-+ During runtime the operator functions are written then dynamically loaded.
++ During runtime the operator functions are [written](https://github.com/Konloch/UnderEngineeredCalculator/blob/main/src/main/java/com/konloch/uec/calculator/builder/CalculatorBuilder.java#L19) then [dynamically loaded](https://github.com/Konloch/UnderEngineeredCalculator/blob/main/src/main/java/com/konloch/uec/calculator/builder/CalculatorBuilder.java#L82).
 
 ## 👨‍💻 Disclaimer
 + This is more of a fun experiment, don't take it too seriously.
